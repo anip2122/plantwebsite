@@ -4,72 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants in Pots Kuching</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Menu -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-        </ul>
-    </nav>
-    
-    <!-- Front Page -->
-    <section id="home">
+    <header>
         <h1>Welcome to Plants in Pots Kuching</h1>
-        <p>Your premier destination for the finest plants and pots in Kuching, Malaysia.</p>
-        <!-- Placeholder for main visual -->
-        <img src="path/to/your/image.jpg" alt="A beautiful selection of plants in pots">
-        <!-- Email Subscription Form -->
-        <form>
-            <input type="email" placeholder="Enter your email for updates">
-            <button type="submit">Subscribe for Updates</button>
-        </form>
+        <nav>
+            <a href="#about-us">About Us</a>
+            <a href="#products-services">Our Plants</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Discover the beauty and diversity of local plants at Plants in Pots Kuching, your premier destination for quality plants in Kuching, Malaysia.</p>
     </section>
     
-    <!-- Shop Page (Placeholder) -->
-    <section id="shop">
-        <h2>Our Products</h2>
-        <!-- Product listings would go here -->
+    <section id="products-services">
+        <h2>Our Popular Plants</h2>
+        <div id="plant-list">Loading plants...</div>
     </section>
     
-    <!-- FAQ Page -->
     <section id="faq">
-        <h2>Frequently Asked Questions</h2>
+        <h2>FAQ</h2>
         <div>
-            <h3>What types of plants and pots do you offer?</h3>
-            <p>Details about the range of plants and pots...</p>
+            <h3>How do I choose the right plant for my home?</h3>
+            <p>Consider the light in your space, the amount of care you can provide, and the size of the plant when fully grown.</p>
         </div>
-        <!-- Additional FAQs go here -->
+        <div>
+            <h3>What is your return policy?</h3>
+            <p>We accept returns within 30 days of purchase for most plants, provided they are in their original condition.</p>
+        </div>
+        <div>
+            <h3>Can I order plants online?</h3>
+            <p>Yes, you can browse and order directly from our website. We offer delivery and pickup options for your convenience.</p>
+        </div>
     </section>
     
-    <!-- Contact Page -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Shop Address: [Your Address Here]</p>
-        <p>Email: [Your Email Here]</p>
-        <p>Phone: [Your Phone Number Here]</p>
-        <!-- Contact Form -->
         <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="phone" placeholder="Phone Number">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
         </form>
+        <p>Join us on social media or send us an email. We aim to respond within 48 hours.</p>
     </section>
     
-    <!-- How It Works Page (Placeholder) -->
-    <section id="how-it-works">
-        <h2>How It Works</h2>
-        <p>Instructions on using the website, making purchases, etc.</p>
-    </section>
-    
-    <!-- Placeholder for Chatbot/Inquiry Management System -->
-    <script>
-        // Chatbot or appointment booking system script would go here
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
