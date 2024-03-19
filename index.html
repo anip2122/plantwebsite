@@ -4,57 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants in Pots Kuching</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Plants in Pots Kuching</h1>
         <nav>
-            <a href="#about-us">About Us</a>
-            <a href="#products-services">Our Plants</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact Us</a>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-
-    <section id="about-us">
-        <h2>About Us</h2>
-        <p>Discover the beauty and diversity of local plants at Plants in Pots Kuching, your premier destination for quality plants in Kuching, Malaysia.</p>
-    </section>
-    
-    <section id="products-services">
-        <h2>Our Popular Plants</h2>
-        <div id="plant-list">Loading plants...</div>
-    </section>
-    
-    <section id="faq">
-        <h2>FAQ</h2>
-        <div>
-            <h3>How do I choose the right plant for my home?</h3>
-            <p>Consider the light in your space, the amount of care you can provide, and the size of the plant when fully grown.</p>
+    <main>
+        <section id="intro" class="section-padding">
+            <h1>Welcome to Plants in Pots Kuching</h1>
+            <p>Bringing nature into urban spaces with our unique collection of potted plants.</p>
+        </section>
+        <section id="featured" class="section-padding">
+            <h2>Featured Plants</h2>
+            <div class="carousel">
+                <!-- Placeholder for carousel (use a library like Slick or Swiper) -->
+                <div class="carousel-item">Plant 1</div>
+                <div class="carousel-item">Plant 2</div>
+                <div class="carousel-item">Plant 3</div>
+            </div>
+        </section>
+       <section id="faq" class="section-padding">
+    <h2>FAQ</h2>
+    <div class="accordion">
+        <div class="accordion-item">
+            <a class="accordion-link" href="#faq1">How do I choose the right plant for my home?</a>
+            <div class="answer" id="faq1">
+                <p>Consider the light in your space, the amount of care you can provide, and the size of the plant when fully grown.</p>
+            </div>
         </div>
-        <div>
-            <h3>What is your return policy?</h3>
-            <p>We accept returns within 30 days of purchase for most plants, provided they are in their original condition.</p>
+        <div class="accordion-item">
+            <a class="accordion-link" href="#faq2">What is your return policy?</a>
+            <div class="answer" id="faq2">
+                <p>We accept returns within 30 days of purchase for most plants, provided they are in their original condition.</p>
+            </div>
         </div>
-        <div>
-            <h3>Can I order plants online?</h3>
-            <p>Yes, you can browse and order directly from our website. We offer delivery and pickup options for your convenience.</p>
+        <div class="accordion-item">
+            <a class="accordion-link" href="#faq3">Can I order plants online?</a>
+            <div class="answer" id="faq3">
+                <p>Yes, you can browse and order directly from our website. We offer delivery and pickup options for your convenience.</p>
+            </div>
         </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" name="name" placeholder="Name">
-            <input type="email" name="email" placeholder="Email">
-            <input type="text" name="phone" placeholder="Phone Number">
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-        <p>Join us on social media or send us an email. We aim to respond within 48 hours.</p>
-    </section>
-    
+    </div>
+</section>
+        <section id="contact" class="section-padding">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Plants in Pots Kuching. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
