@@ -26,13 +26,15 @@
         .slick-dots li.slick-active button {
             background-color: #44633F; /* Color of active dot */
         }
+        /* Additional style for footer */
         footer {
             position: fixed;
             bottom: 0;
             width: 100%;
-            background-color: #f2f2f2;
-            text-align: center;
+            background-color: #f8f8f8;
             padding: 10px 0;
+            text-align: center;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -72,4 +74,17 @@
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Include Slick Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        // Initialize Slick Carousel
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true, // Enable infinite looping
+                slidesToShow: 1, // Show only one slide at a time
+                slidesToScroll: 1 // Scroll only one slide at a time
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
