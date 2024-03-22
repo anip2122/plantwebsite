@@ -49,4 +49,9 @@ document.addEventListener('DOMContentLoaded', function() {
             backToTopButton.style.display = "none";
         }
     });
+
+    // Add click event listener to back-to-top button
+    document.getElementById("back-to-top").addEventListener("click", function() {
+        scrollToTop();
+    });
 });
