@@ -39,6 +39,7 @@ header nav ul li a:hover {
 }
 
 .carousel-item {
+    position: relative;
     margin: 1rem;
     padding: 2rem;
     background-color: #fff;
@@ -64,4 +65,37 @@ header nav ul li a:hover {
 
 .answer {
     background: #f4f4f4;
-    padding
+    /* It seems like the padding property was not completed in your snippet. Adding a default padding value */
+    padding: 1rem;
+}
+
+/* Below are the added styles for the image hover effect */
+
+.plant-image {
+    width: 100%; /* Adjust as necessary */
+    height: auto; /* Adjust as necessary */
+    transition: transform 0.3s ease;
+}
+
+.plant-image:hover {
+    transform: scale(1.05); /* Slightly enlarge images on hover */
+}
+
+.plant-image::after {
+    content: attr(alt);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.plant-image:hover::after {
+    opacity: 1;
+}
