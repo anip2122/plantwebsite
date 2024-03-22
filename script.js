@@ -32,5 +32,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const carouselItems = document.querySelectorAll('.carousel-item');
     // Your carousel initialization code here
 
-    // Placeholder for other features initialization
+    // Function to scroll to the top
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    // Show "Back to Top" button when user scrolls down
+    window.addEventListener("scroll", function() {
+        var backToTopButton = document.getElementById("back-to-top");
+        if (window.scrollY > 200) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
 });
