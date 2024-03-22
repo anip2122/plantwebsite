@@ -27,11 +27,12 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s; /* Added transform transition */
 }
 
 header nav ul li a:hover {
     color: #a4d96c;
+    transform: translateY(-3px); /* Move link slightly up on hover */
 }
 
 .section-padding {
@@ -122,4 +123,9 @@ header nav ul li a:hover {
 
 #back-to-top:hover {
     background-color: #32502B;
+}
+
+/* FAQ Question Indicator Hover Effect */
+.question-indicator:hover {
+    background-color: #ccc; /* Change background color on hover */
 }
