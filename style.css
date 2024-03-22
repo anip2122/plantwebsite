@@ -104,3 +104,22 @@ header nav ul li a:hover {
 .plant-image:hover::after {
     opacity: 1;
 }
+
+/* Back to Top Button Styles */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #44633F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: none; /* Initially hidden */
+}
+
+#back-to-top:hover {
+    background-color: #32502B;
+}
