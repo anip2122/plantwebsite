@@ -10,20 +10,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // FAQ Accordion functionality
-    const accordionItems = document.querySelectorAll('.accordion-item');
+    const faqItems = document.querySelectorAll('.accordion details');
 
-    accordionItems.forEach(item => {
-        const link = item.querySelector('.accordion-link');
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const answer = this.nextElementSibling;
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
+    faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+            if (this.hasAttribute('open')) {
+                this.removeAttribute('open');
+                this.querySelector('p.answer').classList.remove('visible');
             } else {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
+                faqItems.forEach(item => {
+                    item.removeAttribute('open');
+                    item.querySelector('p.answer').classList.remove('visible');
+                });
+                this.setAttribute('open', '');
+                this.querySelector('p.answer').classList.add('visible');
             }
         });
     });
 
-    // Placeholder for other features initialization (e.g., carousels)
+    // Carousel functionality
+    // Replace the following placeholder with your carousel initialization code
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    // Your carousel initialization code here
+
+    // Placeholder for other features initialization
 });
