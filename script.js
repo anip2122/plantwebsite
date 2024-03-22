@@ -28,8 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Carousel functionality
-    // Replace the following placeholder with your carousel initialization code
+    // Carousel initialization
     const carouselItems = document.querySelectorAll('.carousel-item');
     // Your carousel initialization code here
 
