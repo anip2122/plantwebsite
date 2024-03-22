@@ -29,8 +29,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Carousel initialization
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    // Your carousel initialization code here
+    $(document).ready(function(){
+        $('.carousel').slick({
+            infinite: true, // Enable infinite looping
+            slidesToShow: 1, // Show only one slide at a time
+            slidesToScroll: 1, // Scroll only one slide at a time
+            dots: true, // Show dot indicators at the bottom
+            arrows: true, // Enable prev/next arrows
+            autoplay: true, // Enable autoplay mode
+            autoplaySpeed: 2000, // Autoplay speed in milliseconds
+            adaptiveHeight: true, // Adjust slide height based on content
+            swipe: true // Enable swipe functionality
+        });
+    });
 
     // Function to scroll to the top
     function scrollToTop() {
